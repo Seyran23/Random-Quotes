@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Comme:wght@600&family=Vollkorn:ital@1&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  position: relative;
+
+  color: grey;
+  background-color: #19abab;
+
+  font-family: "Vollkorn", serif;
+  font-size: 25px;
+}
+
+.container {
+  height: 90vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote_container {
+  width: 60%;
+  height: 50%;
+
+  margin: 75px auto;
+  padding: 0 75px;
+
+  background-color: #f5f2f0;
+  border: 10px solid #f3c698;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+
+.quote_paragraph {
+  padding: 0 20px;
+}
+
+.author_paragraph {
+  font-family: "Comme", sans-serif;
+}
+
+.btn {
+  padding: 12px 15px;
+
+  color: white;
+  background-color: rgba(31, 29, 29, 0.509);
+  border: none;
+  border-radius: 3px;
+}
+
+.btn:hover {
+  background-color: rgba(18, 17, 17, 0.509);
+  opacity: 0.7;
+}
+
+@media (max-width: 630px) {
+  body {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 450px) {
+  body {
+    font-size: 1.1rem;
+  }
+
+  .quote_container {
+    width: 50%;
+  }
+}
